@@ -1,0 +1,42 @@
+{
+  "name": "typescript-kurs",
+  "version": "1.0.0",
+  "description": "TypeScript von A bis Z – ein Kurs für Java-Umsteiger",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "format": "prettier --write \"lektionen/**/*.{ts,tsx}\" \"projekte/**/*.{ts,tsx}\"",
+    "api": "tsx watch lektionen/l11-backend/server.ts",
+    "api:hono": "tsx watch lektionen/l11-backend/server-hono.ts",
+    "web:dom": "vite lektionen/l12-frontend/dom-app",
+    "web:react": "vite lektionen/l12-frontend/react-app",
+    "projekt-a": "tsx projekte/projekt-a-terminplaner/src/main.ts",
+    "projekt-b": "tsx projekte/projekt-b-auswertung/src/cli.ts",
+    "final:api": "tsx watch projekte/abschlussprojekt/server/src/index.ts",
+    "final:web": "vite projekte/abschlussprojekt/web"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "hono": "^4.9.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "prettier": "^3.6.0",
+    "tsx": "^4.20.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.0",
+    "vitest": "^5.1.0"
+  }
+}

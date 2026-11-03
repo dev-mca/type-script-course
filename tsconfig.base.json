@@ -1,0 +1,32 @@
+{
+  // Gemeinsame Compiler-Einstellungen für den ganzen Kurs.
+  // Jede Lektion hat ein eigenes tsconfig.json, das diese Datei erweitert.
+  // Was die einzelnen Optionen bedeuten, lernst du in Lektion 9.
+  "compilerOptions": {
+    // Welche JavaScript-Version erzeugt/erwartet wird und welche Standard-APIs bekannt sind
+    "target": "es2024",
+    "lib": ["es2024"],
+
+    // Modulsystem: moderne ES-Module, Auflösung wie bei Vite/tsx (Importe ohne Dateiendung)
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+
+    // Typdefinitionen für Node.js (console, process, fetch, fs, ...)
+    "types": ["node"],
+
+    // Strenge Prüfungen – so arbeiten professionelle Teams
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // tsc prüft nur – ausgeführt wird mit tsx/Vitest/Vite
+    "noEmit": true,
+    "skipLibCheck": true
+  }
+}

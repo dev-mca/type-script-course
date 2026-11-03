@@ -1,0 +1,10 @@
+id;datum;zeit;barber;serviceId;kunde;status
+B-011;2026-10-02;09:00;Anna;s-cut;Melih;erledigt
+B-012;2026-10-02;09:30;Anna;s-beard;Kurt;erledigt
+B-013;2026-10-03;10:00;Bob;s-color;Lea;erledigt
+B-014;2026-10-07;16:00;Bob;s-cut;Chiara;nicht-erschienen
+B-015;2026-10-10;11:00;Anna;s-combo;Dario;erledigt
+B-016;2026-10-10;12:00;Bob;s-cut;Melih;storniert
+B-017;2026-10-17;09:00;Anna;s-cut;Eva;erledigt
+B-018;2026-10-24;14:30;Bob;s-beard;Fabio;abgesagt
+B-019;2026-10-31;10:00;Anna;s-color;Gina;erledigt

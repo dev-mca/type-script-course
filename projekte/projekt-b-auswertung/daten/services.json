@@ -1,0 +1,6 @@
+[
+  { "id": "s-cut", "name": "Haarschnitt", "priceInRappen": 4500, "durationMinutes": 30 },
+  { "id": "s-beard", "name": "Bart", "priceInRappen": 2500, "durationMinutes": 15 },
+  { "id": "s-combo", "name": "Haarschnitt + Bart", "priceInRappen": 6500, "durationMinutes": 45 },
+  { "id": "s-color", "name": "Färben", "priceInRappen": 9000, "durationMinutes": 90 }
+]

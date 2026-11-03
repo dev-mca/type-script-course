@@ -1,0 +1,13 @@
+{
+  // Eigene Mini-Konfiguration NUR für das Kompilier-Experiment.
+  // Hier lassen wir tsc wirklich JavaScript-Dateien erzeugen.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "rootDir": "src",
+    "outDir": "out",
+    "strict": true,
+    "types": []
+  },
+  "include": ["src"]
+}

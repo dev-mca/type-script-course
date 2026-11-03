@@ -1,0 +1,142 @@
+:root {
+  --bg: #f6f4f0;
+  --card: #ffffff;
+  --text: #1f1d1a;
+  --muted: #6b665e;
+  --accent: #0f766e;
+  --danger: #b42318;
+  --border: #e4dfd6;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171614;
+    --card: #22201d;
+    --text: #f3f0ea;
+    --muted: #a8a196;
+    --accent: #2dd4bf;
+    --danger: #f97066;
+    --border: #38342e;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+h1 small {
+  font-size: 0.5em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 32px;
+}
+
+.cards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.cards li,
+.list li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.cards strong {
+  display: block;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.list li .time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.list li .grow {
+  flex: 1;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  max-width: 360px;
+}
+
+.form label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.9em;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+button.link {
+  background: none;
+  color: var(--danger);
+  padding: 4px 8px;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.success {
+  color: var(--accent);
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Termine – DOM-Version</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>✂️ Termin buchen <small>DOM-Version</small></h1>
+
+      <section>
+        <h2>Unsere Services</h2>
+        <ul id="service-list" class="cards">
+          <li>Lade …</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Termine am <input type="date" id="date" /></h2>
+        <ul id="booking-list" class="list"></ul>
+      </section>
+
+      <section>
+        <h2>Neuer Termin</h2>
+        <form id="booking-form" class="form" novalidate>
+          <label>
+            Service
+            <select name="serviceId" id="service-select"></select>
+          </label>
+          <label>
+            Name
+            <input name="customerName" autocomplete="name" />
+          </label>
+          <label>
+            Uhrzeit
+            <input type="time" name="time" step="900" />
+          </label>
+          <button type="submit">Buchen</button>
+          <div id="form-message" role="status"></div>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

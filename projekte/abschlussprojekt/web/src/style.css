@@ -1,0 +1,17 @@
+/* Abschlussprojekt – Styles. Tipp: Starte mit lektionen/l12-frontend/dom-app/style.css */
+
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f1d1a;
+  background: #f6f4f0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.error {
+  color: #b42318;
+}

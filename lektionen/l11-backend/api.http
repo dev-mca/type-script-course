@@ -1,0 +1,62 @@
+### IntelliJ HTTP Client – klicke auf ▶ links neben einer Anfrage.
+### Vorher den Server starten: npm run api   (bzw. npm run api:hono für Teil D)
+### Doku: https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html
+
+@base = http://localhost:3000
+
+### Health
+GET {{base}}/health
+
+### Alle Services
+GET {{base}}/services
+
+### Ein Service
+GET {{base}}/services/s-cut
+
+### Unbekannter Service → 404
+GET {{base}}/services/s-massage
+
+### Buchung erstellen
+POST {{base}}/bookings
+Content-Type: application/json
+
+{
+  "serviceId": "s-combo",
+  "customerName": "Melih",
+  "start": "2026-11-20T10:00"
+}
+
+### Überschneidung → 409 (nach der Anfrage oben)
+POST {{base}}/bookings
+Content-Type: application/json
+
+{
+  "serviceId": "s-beard",
+  "customerName": "Anna",
+  "start": "2026-11-20T10:30"
+}
+
+### Ungültige Daten → 400 mit Details
+POST {{base}}/bookings
+Content-Type: application/json
+
+{
+  "serviceId": "s-cut",
+  "customerName": "M",
+  "start": "morgen um zehn"
+}
+
+### Ungültiges JSON → 400
+POST {{base}}/bookings
+Content-Type: application/json
+
+{ kaputt
+
+### Buchungen eines Tages
+GET {{base}}/bookings?date=2026-11-20
+
+### Buchung löschen (ID aus der Antwort oben einsetzen)
+DELETE {{base}}/bookings/HIER-ID-EINSETZEN
+
+### Falsche Methode → 405 (eigener Router) bzw. 404 (Hono)
+PUT {{base}}/services

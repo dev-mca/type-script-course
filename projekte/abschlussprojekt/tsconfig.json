@@ -1,0 +1,11 @@
+{
+  // Ein tsconfig für Server, Web und shared – so sieht IntelliJ alles zusammen.
+  // In grösseren Projekten bekommt jeder Teil sein eigenes (Stichwort: «Project References»).
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2024", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "types": ["node", "vite/client"]
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}

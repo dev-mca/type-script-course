@@ -1,0 +1,1 @@
+Diese Datei ist kein Buchungsexport und soll vom Programm ignoriert werden.

@@ -1,0 +1,13 @@
+{
+  // Root-Konfiguration: prüft das ganze Projekt mit `npm run typecheck`.
+  // IntelliJ verwendet für jede Datei das nächstgelegene tsconfig.json
+  // (also meistens das der jeweiligen Lektion).
+  "extends": "./tsconfig.base.json",
+  "include": ["lektionen/**/*.ts", "projekte/**/*.ts", "*.ts"],
+  "exclude": [
+    "node_modules",
+    "lektionen/l01-erste-schritte/kompilieren",
+    "lektionen/l12-frontend",
+    "projekte/abschlussprojekt"
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "B-020", "date": "2026-11-02", "time": "09:00", "barber": "Anna", "serviceId": "s-cut", "customer": "Melih", "status": "erledigt" },
+  { "id": "B-021", "date": "2026-11-03", "time": "10:00", "barber": "Bob", "serviceId": "s-combo", "customer": "Kurt", "status": "erledigt" },
+  { "id": "B-022", "date": "2026-11-03", "time": "25:00", "barber": "Bob", "serviceId": "s-cut", "customer": "Lea", "status": "erledigt" },
+  { "id": "B-023", "date": "2026-11-04", "time": "11:00", "barber": "Anna", "serviceId": "s-beard", "customer": "Dario", "status": "nicht-erschienen" },
+  { "id": "B-024", "date": "2026-11-07", "barber": "Anna", "serviceId": "s-cut", "customer": "Eva", "status": "erledigt" },
+  { "id": "B-025", "date": "2026-11-07", "time": "14:00", "barber": "Bob", "serviceId": "s-color", "customer": "Chiara", "status": "erledigt" }
+]

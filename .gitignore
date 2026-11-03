@@ -1,0 +1,16 @@
+node_modules/
+dist/
+out/
+coverage/
+.vitest/
+*.log
+.DS_Store
+
+# IntelliJ-Projektdateien (werden beim Öffnen neu erzeugt)
+.idea/
+*.iml
+
+# Laufzeitdaten der Projekte
+projekte/**/ausgabe/
+projekte/abschlussprojekt/server/data/*.json
+!projekte/abschlussprojekt/server/data/.gitkeep
