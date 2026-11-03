@@ -14,3 +14,8 @@ coverage/
 projekte/**/ausgabe/
 projekte/abschlussprojekt/server/data/*.json
 !projekte/abschlussprojekt/server/data/.gitkeep
+
+# Umgebungsvariablen mit Geheimnissen (z. B. ADMIN_TOKEN im Abschlussprojekt)
+.env
+.env.*
+!.env.example
